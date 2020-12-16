@@ -20,7 +20,7 @@ namespace DotNetEnv.Tests
             //  https://msdn.microsoft.com/en-us/library/z46c489x(v=vs.110).aspx#Remarks
             Assert.Null(Environment.GetEnvironmentVariable("EMPTY"));
             Assert.Equal("'", Environment.GetEnvironmentVariable("QUOTE"));
-            Assert.Equal("https://github.com/tonerdo", Environment.GetEnvironmentVariable("URL"));
+            Assert.Equal("https://github.com/rogusdev", Environment.GetEnvironmentVariable("URL"));
             Assert.Equal("user=test;password=secret", Environment.GetEnvironmentVariable("CONNECTION"));
             Assert.Equal("  leading and trailing white space   ", Environment.GetEnvironmentVariable("WHITEBOTH"));
             Assert.Equal("SPECIAL STUFF---\nLONG-BASE64\\ignore\"slash", Environment.GetEnvironmentVariable("SSL_CERT"));
@@ -59,7 +59,7 @@ namespace DotNetEnv.Tests
             //  https://msdn.microsoft.com/en-us/library/z46c489x(v=vs.110).aspx#Remarks
             Assert.Null(Environment.GetEnvironmentVariable("EMPTY"));
             Assert.Equal("'", Environment.GetEnvironmentVariable("QUOTE"));
-            Assert.Equal("https://github.com/tonerdo", Environment.GetEnvironmentVariable("URL"));
+            Assert.Equal("https://github.com/rogusdev", Environment.GetEnvironmentVariable("URL"));
             Assert.Equal("user=test;password=secret", Environment.GetEnvironmentVariable("CONNECTION"));
             Assert.Equal("  leading and trailing white space   ", Environment.GetEnvironmentVariable("WHITEBOTH"));
             Assert.Equal("SPECIAL STUFF---\nLONG-BASE64\\ignore\"slash", Environment.GetEnvironmentVariable("SSL_CERT"));
@@ -74,7 +74,7 @@ namespace DotNetEnv.Tests
             //  https://msdn.microsoft.com/en-us/library/z46c489x(v=vs.110).aspx#Remarks
             Assert.Null(Environment.GetEnvironmentVariable("EMPTY"));
             Assert.Equal("'", Environment.GetEnvironmentVariable("QUOTE"));
-            Assert.Equal("https://github.com/tonerdo", Environment.GetEnvironmentVariable("URL"));
+            Assert.Equal("https://github.com/rogusdev", Environment.GetEnvironmentVariable("URL"));
             Assert.Equal("user=test;password=secret", Environment.GetEnvironmentVariable("CONNECTION"));
             Assert.Equal("  leading and trailing white space   ", Environment.GetEnvironmentVariable("WHITEBOTH"));
             Assert.Equal("SPECIAL STUFF---\nLONG-BASE64\\ignore\"slash", Environment.GetEnvironmentVariable("SSL_CERT"));
@@ -89,7 +89,7 @@ namespace DotNetEnv.Tests
             //  https://msdn.microsoft.com/en-us/library/z46c489x(v=vs.110).aspx#Remarks
             Assert.Null(Environment.GetEnvironmentVariable("EMPTY"));
             Assert.Equal("'", Environment.GetEnvironmentVariable("QUOTE"));
-            Assert.Equal("https://github.com/tonerdo", Environment.GetEnvironmentVariable("URL"));
+            Assert.Equal("https://github.com/rogusdev", Environment.GetEnvironmentVariable("URL"));
             Assert.Equal("user=test;password=secret", Environment.GetEnvironmentVariable("CONNECTION"));
             Assert.Equal("  leading and trailing white space   ", Environment.GetEnvironmentVariable("WHITEBOTH"));
             Assert.Equal("SPECIAL STUFF---\nLONG-BASE64\\ignore\"slash", Environment.GetEnvironmentVariable("SSL_CERT"));
@@ -108,7 +108,7 @@ namespace DotNetEnv.Tests
             Environment.SetEnvironmentVariable("NAME", null);
             Environment.SetEnvironmentVariable("URL", "i'm going to be overwritten");
             DotNetEnv.Env.Load(options: new DotNetEnv.LoadOptions(clobberExistingVars: true));
-            Assert.Equal("https://github.com/tonerdo", Environment.GetEnvironmentVariable("URL"));
+            Assert.Equal("https://github.com/rogusdev", Environment.GetEnvironmentVariable("URL"));
             Assert.Equal("Toni", Environment.GetEnvironmentVariable("NAME"));
         }
 
@@ -126,7 +126,7 @@ namespace DotNetEnv.Tests
             Environment.SetEnvironmentVariable("NAME", null);
             Environment.SetEnvironmentVariable("URL", "i'm going to be overwritten");
             DotNetEnv.Env.Load(options: new DotNetEnv.LoadOptions(setEnvVars: true));
-            Assert.Equal("https://github.com/tonerdo", Environment.GetEnvironmentVariable("URL"));
+            Assert.Equal("https://github.com/rogusdev", Environment.GetEnvironmentVariable("URL"));
             Assert.Equal("Toni", Environment.GetEnvironmentVariable("NAME"));
         }
 

@@ -10,10 +10,10 @@
     <OutputType>Library</OutputType>
     <PackageId>DotNetEnv</PackageId>
     <PackageTags>dotnet;env;dotfiles</PackageTags>
-    <PackageProjectUrl>https://github.com/tonerdo/dotnet-env</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/rogusdev/dotnet-env</PackageProjectUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/tonerdo/dotnet-env</RepositoryUrl>
+    <RepositoryUrl>https://github.com/rogusdev/dotnet-env</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
